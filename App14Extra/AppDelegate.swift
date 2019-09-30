@@ -19,10 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
+//        Carga la vista de ViewController
+//        let vc = ViewController()
+//        let navController = UINavigationController(rootViewController: vc)
         
-        let vc = ViewController()
-        let navController = UINavigationController(rootViewController: vc)
-        
+        //        Carga la vista de ViewController
+        let alumnoTableVC = AlumnoTableViewController()
+        let navController = UINavigationController(rootViewController: alumnoTableVC)
         window?.rootViewController = navController
         
         
